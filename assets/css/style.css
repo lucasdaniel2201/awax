@@ -634,13 +634,16 @@ header {
         margin-right: 30px;
     }
     nav {
-        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgba(0,0,0,0.9);
         width: 70vw;
         height: calc(100vh - 100px);
         top: 100px;
+        right: -100%;
+        transition: right 0.4s ease-in-out;
+    }
+    nav.show {
         right: 0;
     }
     .menu ul {
